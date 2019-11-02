@@ -474,11 +474,8 @@ export default {
     background-color: #bbbbbb;
   }
 
-span{
-   color: rgb(255, 145, 0);
-   font: outline;
 
-}
+  
 
   .splitpanes__splitter {
     background-color: rgb(255, 255, 255);
@@ -501,7 +498,7 @@ span{
   }
   &.splitpanes--vertical > .splitpanes__splitter,
   .splitpanes--vertical > .splitpanes__splitter {
-    width: 12px;
+    width: 9px;
     margin-left: -1px;
     &:hover:active {
      width:100px;
@@ -518,7 +515,7 @@ span{
   }
   &.splitpanes--horizontal > .splitpanes__splitter,
   .splitpanes--horizontal > .splitpanes__splitter {
-    height: 12px;
+    height: 9px;
     margin-top: -1px;
      &:hover:active {
       height: 100px;
