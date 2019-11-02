@@ -471,10 +471,17 @@ export default {
 }
 .splitpanes.default-theme {
   .splitpanes__pane {
-    background-color: #f2f2f2;
+    background-color: #bbbbbb;
   }
+
+span{
+   color: rgb(255, 145, 0);
+   font: outline;
+
+}
+
   .splitpanes__splitter {
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     position: relative;
     &:before, &:after {
@@ -485,7 +492,7 @@ export default {
       background-color: rgba(0, 0, 0, .15);
       transition: background-color 0.3s;
     }
-    &:hover:before, &:hover:after {background-color: rgba(0, 0, 0, .25);}
+  
   }
 }
 .default-theme {
@@ -494,22 +501,30 @@ export default {
   }
   &.splitpanes--vertical > .splitpanes__splitter,
   .splitpanes--vertical > .splitpanes__splitter {
-    width: 9px;
-    border-left: 1px solid #eee;
+    width: 12px;
     margin-left: -1px;
+    &:hover:active {
+     width:100px;
+      background-color: rgba(60, 255, 0, 0.603);
+       transition: background-color 1.5s;
+    }
     &:before, &:after {
       transform: translateY(-50%);
       width: 1px;
       height: 30px;
     }
-    &:before {margin-left: -2px;}
+    &:before {margin-left: -2px; }
     &:after {margin-left: 1px;}
   }
   &.splitpanes--horizontal > .splitpanes__splitter,
   .splitpanes--horizontal > .splitpanes__splitter {
-    height: 9px;
-    border-top: 1px solid #eee;
+    height: 12px;
     margin-top: -1px;
+     &:hover:active {
+      height: 100px;
+      background-color: rgba(60, 255, 0, 0.603);
+       transition: background-color 1.5s;
+    }
     &:before,
     &:after {
       transform: translateX(-50%);
